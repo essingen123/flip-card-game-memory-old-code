@@ -416,7 +416,7 @@ height: 90%;
 
                 function startScreen(text) {
                     $('#g').removeAttr('class').empty();
-                    $('.logo').fadeIn(50);
+                    $('.logo').fadeIn(350);
 
                     $('.c1').text(text.substring(0, 1));
                     $('.c2').text(text.substring(1, 2));
@@ -522,6 +522,8 @@ height: 90%;
                                                     set('flip_' + difficulty, time); // increase best score
                                                 }
 
+
+updateStats();
                                                 startScreen('nice');
                                             }
                                         }

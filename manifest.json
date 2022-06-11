@@ -1,0 +1,6 @@
+// manifest.json
+{
+  "name": "Example App",
+  "display": "standalone",
+  "start_url": "/?standalone=true"
+}

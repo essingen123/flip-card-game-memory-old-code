@@ -13,10 +13,17 @@
 </head>
 
 <body>
+    <div id="app">
     <div class="sticky top-0">
         <div class="h-safe-area-inset-top" :class="{ 'bg-black': !transparent || (transparent && scrollTop > 0) }">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <style>
+                #app {
+                    height: 150%;
+                    width: 100%;
+margin-bottom:20px;
+                    /* overflow: hidden; */
+                }
                 .element {
                     height: 100%;
                     width: env(safe-area-inset-left);
@@ -93,7 +100,7 @@
 
                 #g {
                     width: 100%;
-                    position: absolute;
+                    position: fixed;
                     text-align: center;
                     margin-bottom: 30px;
                 }
@@ -278,7 +285,7 @@
                 .card .b::before {
                     content: attr(data-f);
                     display: block;
-                    font: normal 23px/23px "GeneralFoundicons";
+                    font: normal 6vw/4vh "GeneralFoundicons";
                     position: absolute;
                     top: 50%;
                     margin-top: -15px;
@@ -599,4 +606,5 @@
                 }
             });
         </script>
+        </div>
 </body>

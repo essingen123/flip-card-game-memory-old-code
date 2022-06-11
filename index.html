@@ -14,15 +14,8 @@
 <body>
 	<!-- NavigationBar.vue -->
 <div class="sticky top-0">
-    <div
-        class="h-safe-area-inset-top"
-        :class="{
-            'bg-black': !transparent
-                        || (transparent && scrollTop > 0)
-        }"
-	 >
+    <div class="h-safe-area-inset-top" :class="{ 'bg-black': !transparent || (transparent && scrollTop > 0) }">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  
 <style>
 	
 	
@@ -47,8 +40,11 @@ body, html, .flipper, .f, .b, #g {
 	height:100%;
 margin:auto;
 	}
+		#g {
+margin:auto;
+	}
 
-	 .flipper, .f, .b, #g {
+	 .flipper, .f, .b {
 	width:97%;
 	height:97%;
 margin:auto;

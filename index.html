@@ -206,7 +206,7 @@
 
                     @-webkit-keyframes timer {
                         30% {
-                            width: 885%;
+                            width: 85%;
                         }
                     }
 
@@ -294,10 +294,11 @@
                     .card .b::before {
                         content: attr(data-f);
                         display: block;
-                        font: normal 80px/100px "GeneralFoundicons";
+                        font: normal 50px/60px "GeneralFoundicons";
+											
                         position: absolute;
-                        top: 50%;
-                        margin-top: -50px;
+                        top: 1%;
+                        margin-top: -1px;
                         width: 100%;
                         text-align: center;
                         color: #eb34a0 !important;
@@ -377,22 +378,26 @@
                     /*Responsive Stuff*/
                     @media all and (max-width: 1680px) and (min-width: 640px) {
                         .card .b::before {
-                            font-size: 64px
+                            font-size: 44px;
+													top-margin:0;
+													top:2px;
                         }
 
                         #g.medium .card .b::before {
-                            font-size: 54px
+                            font-size: 34px/54px;
+													top-margin:2px;
+													top:3%;
                         }
 
                         #g.hard .card .b::before {
-                            font-size: 38px
+                            font-size: 30px/40px;
+													
                         }
                     }
 
                     @media all and (max-width: 640px) and (min-width: 470px) {
                         .card .b::before {
-                            font-size: 60px;
-
+                              font-size: 40px/50px;
 
                         }
 
